@@ -25,7 +25,7 @@ public class Trie implements ITrie{
 	
 	private Iterator createIterator(String s){
 		ArrayList<Integer> list = new ArrayList<Integer>();
-		
+		//typecast von char nach int möglich
 		for(char c: s.toCharArray()){
 			Integer i = (int)c;
 			list.add(i);
@@ -34,7 +34,7 @@ public class Trie implements ITrie{
 	}
 
 	public String print() {
-		return root.toString();
+		return root.recursiveToString();
 	}
 
 }

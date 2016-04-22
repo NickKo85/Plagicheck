@@ -1,19 +1,24 @@
 package token;
 
 public class Token implements IToken{
+	private int classCode;
+	private int relativeCode;
 
 	public Token(int i, int j) {
-		// TODO Auto-generated constructor stub
+		this.classCode = i;
+		this.relativeCode = j;
 	}
 
 	public int getClassCode() {
-		// TODO Auto-generated method stub
-		return 0;
+		return classCode;
 	}
 
 	public int getRelativeCode() {
-		// TODO Auto-generated method stub
-		return 0;
+		return relativeCode;
+	}
+	
+	public String toString(){
+		return this.classCode+"/"+this.relativeCode;
 	}
 
 }

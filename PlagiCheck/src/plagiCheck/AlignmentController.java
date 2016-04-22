@@ -31,9 +31,12 @@ public class AlignmentController {
         ILexer lexer = new SimpleLexer(inputOriginal);
         IToken token = lexer.getNextToken();
         while(token != null){
-            System.out.println("Gelesen: "+token);
+            //System.out.println("Gelesen: "+token.toString());
             token = lexer.getNextToken();
         }
+        
+        System.out.print(lexer.toString());
+        
 
         //später hier Lexer an zweiten Input binden; Leseschleife
     }

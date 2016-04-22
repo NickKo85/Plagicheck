@@ -47,7 +47,7 @@ public class SimpleLexer implements ILexer {
                     //sp√§ter ist hier der Klassencode des Strings bekannt und es kann der richtige Trie angesteuert werden
                     ref = trie.insert(intermediate,action); //DIC
                     //sp√§ter: Extraktion des relative Codes aus ref und Bilden des Tokens aus Klassencode und Relativcode
-                    result = new Token(-1,-1); //ein dummy !!!!
+                    result = new Token(-1,-1); //TODO: ein dummy !!!!
                     foundToken = true;
                 }
                 else{
@@ -70,6 +70,6 @@ public class SimpleLexer implements ILexer {
     }
 
     public String toString() {
-        return "\nResult Trie \n"+trie.print();
+        return "\n‹bersicht ¸ber Trie: \n"+trie.print();
     }
 }

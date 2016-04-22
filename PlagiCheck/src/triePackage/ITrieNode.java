@@ -13,6 +13,8 @@ public interface ITrieNode {
 
 	public Integer getActionValue();
 
-	public Map<Integer, ITrieNode> getEdgeMap();
+	public Map<Integer, ITrieNode> getOutgoingEdgeMap();
+
+	public String recursiveToString();
 
 }
