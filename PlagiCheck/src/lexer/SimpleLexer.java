@@ -8,6 +8,7 @@ import actionsPackage.StringCoding;
 import log.Log;
 import token.IToken;
 import token.Token;
+import token.TokenClass;
 import triePackage.ITrie;
 import triePackage.ITrieReference;
 import triePackage.Trie;
@@ -47,7 +48,7 @@ public class SimpleLexer implements ILexer {
                     //später ist hier der Klassencode des Strings bekannt und es kann der richtige Trie angesteuert werden
                     ref = trie.insert(intermediate,action); //DIC
                     //später: Extraktion des relative Codes aus ref und Bilden des Tokens aus Klassencode und Relativcode
-                    result = new Token(-1,-1); //TODO: ein dummy !!!!
+                    result = new Token(TokenClass.WS,-1); //TODO: ein dummy !!!!
                     foundToken = true;
                 }
                 else{
