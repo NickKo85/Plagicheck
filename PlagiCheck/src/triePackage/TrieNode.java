@@ -11,7 +11,7 @@ public class TrieNode implements ITrieNode{
 	final private Map<Integer, ITrieNode> outgoingEdgeMap;
 	final private ITrieNode parent;
 	final private Integer ingoingPartialKey;
-	private Integer actionValue;
+	private Integer actionValue; //muss hier der Token hin?
 	private int row;
 
 	public TrieNode(IMapFactory mapFactory, ITrieNode parent, Integer ingoingPartialKey, int row){
